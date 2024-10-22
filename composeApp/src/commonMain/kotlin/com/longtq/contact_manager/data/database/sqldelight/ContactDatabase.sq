@@ -1,0 +1,27 @@
+
+CREATE TABLE Contact(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL UNIQUE,
+    email TEXT NOT NULL UNIQUE,
+    phone TEXT NOT NULL,
+    typeImage INTEGER
+);
+
+getContactByPhone:
+SELECT * FROM Contact WHERE phone = ?;
+
+getContactByEmail:
+SELECT * FROM Contact WHERE email = ?;
+
+insertContact:
+INSERT INTO Contact ( name, email, phone, typeImage) VALUES ( ?, ?, ?, ?);
+
+deleteContacts:
+DELETE FROM Contact WHERE id IN ?;
+
+getAllContacts:
+SELECT * FROM Contact;
+
+searchContacts:
+SELECT * FROM Contact WHERE name LIKE '%' || :query || '%' OR phone LIKE '%' || :query || '%';
+
