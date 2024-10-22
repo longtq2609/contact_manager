@@ -20,7 +20,8 @@ deleteContacts:
 DELETE FROM Contact WHERE id IN ?;
 
 getAllContacts:
-SELECT * FROM Contact;
+SELECT * FROM Contact
+ORDER BY UPPER(SUBSTR(name, 1, 1));
 
 searchContacts:
 SELECT * FROM Contact WHERE name LIKE '%' || :query || '%' OR phone LIKE '%' || :query || '%';
