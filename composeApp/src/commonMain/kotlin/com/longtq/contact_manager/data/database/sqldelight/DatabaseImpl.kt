@@ -45,7 +45,7 @@ class DatabaseImpl(private val appDatabase: Database) : AppDatabase {
                     id = it.id,
                     name = it.name,
                     email = it.email,
-                    phone = it.phone ?: "",
+                    phone = it.phone,
                     typeImage = it.typeImage ?: 0
                 )
             }
@@ -63,9 +63,9 @@ class DatabaseImpl(private val appDatabase: Database) : AppDatabase {
             it.contactDatabaseQueries.searchContacts(query).executeAsList().map {
                 ContactDatabase(
                     id = it.id,
-                    name = it.name ?: "",
-                    email = it.email ?: "",
-                    phone = it.phone ?: "",
+                    name = it.name,
+                    email = it.email,
+                    phone = it.phone,
                     typeImage = it.typeImage ?: 0
                 )
             }

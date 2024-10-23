@@ -7,6 +7,7 @@ androidx-activityCompose = "1.9.2"
 androidx-lifecycle = "2.8.2"
 compose-plugin = "1.6.11"
 kotlin = "2.0.20"
+kotlinxCoroutinesCore = "1.6.0-native-mt"
 material = "1.7.4"
 material3Desktop = "1.6.0"
 moshi = "1.15.1"
@@ -28,6 +29,7 @@ androidx-material = { module = "androidx.compose.material:material", version.ref
 androidx-material3 = { module = "androidx.compose.material3:material3", version.ref = "material3Android" }
 composeGradle = { module = "org.jetbrains.compose:compose-gradle-plugin", version.ref = "compose" }
 kotlinGradle = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
 
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }

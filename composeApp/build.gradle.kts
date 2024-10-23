@@ -64,6 +64,7 @@ kotlin {
         }
 
         iosMain.dependencies {
+            implementation(libs.kotlinx.coroutines.core) // Dependency cho iOS
             implementation(libs.sqlDelight.driver.native)
         }
     }
