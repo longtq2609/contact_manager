@@ -3,8 +3,12 @@ This is a Kotlin Multiplatform project targeting Android, iOS.
 # Application Scope
 This is a simple application to manage contacts. Data is fetched dynamically from Json File.
 
-![architecture](misc/image/demo_android.mp4)
-![architecture](misc/image/demo_ios.mp4)
+## Video Demo
+
+| Android | iOS |
+|---------|-----|
+| ![Android Video](https://github.com/user-attachments/assets/9514627f-cdb9-418d-a846-627c747e8d01) | ![iOS Video](https://github.com/user-attachments/assets/63724dbe-9323-4b8d-a4b6-18bbb9315f7d) |
+
 
 ## Tech-Stack
 This project takes advantage of best practices and many popular libraries and tools in the Android ecosystem. Most of
